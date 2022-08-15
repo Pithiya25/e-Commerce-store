@@ -1,0 +1,32 @@
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    height: 11rem;
+}
+.container-footer .left,
+.container-footer .center,
+.container-footer .right{
+    flex-basis: 30%;
+}
+.title-footer, .right, .center{
+    color: white;
+    text-align: center;
+}
+
+.footer-icon i{
+   margin-right: 1rem;
+}
+.footer-icon i:hover{
+   cursor: pointer;
+}
+
+
+@media  screen and (max-width:769px) {
+    .container-footer{
+        flex-direction: column;
+        width: 100%;
+
+    }
+}

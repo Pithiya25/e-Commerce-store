@@ -1,0 +1,161 @@
+.navbar {
+  margin-bottom: 1rem;
+}
+a {
+  color: #9b393b;
+  text-decoration: none;
+  cursor: pointer;
+}
+.head {
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.26);
+  width: 100%;
+}
+.head-icon i {
+  padding: 0.5rem;
+  margin: 0 18px;
+  color: black;
+  background-color: indianred;
+}
+.head-icon i:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  margin-bottom: 10px;
+  color: black;
+}
+.middle .contact-info {
+  display: flex;
+  margin-left: 4rem;
+}
+.middle .contact-info i {
+  padding-left: 10px;
+}
+
+.middle .contact-text,
+.middle .title,
+.middle .contact-info {
+  flex-basis: 30%;
+  margin: auto;
+}
+.middle i {
+  margin-right: 5px;
+}
+.bottom {
+  width: 80%;
+  margin: auto;
+}
+.bottom ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  font-size: large;
+}
+.bottom li {
+  position: relative;
+  z-index: 5;
+}
+.bottom li:hover {
+  cursor: pointer;
+}
+.bottom li i {
+  color: indianred;
+}
+.bottom ul ul {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+.bottom ul ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 0.4rem;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid grey;
+}
+
+.bottom ul li:hover > ul {
+  display: block;
+}
+.ham-nav,
+.ham-nav2 {
+  display: none;
+}
+
+/*==================== Media query ======================== */
+
+@media screen and (max-width: 769px) {
+  .bottom {
+    display: none;
+  }
+  .middle .contact-info {
+    flex-direction: column;
+  }
+  .middle {
+    height: fit-content;
+    margin-top: 1rem;
+    flex-direction: column;
+    position: relative;
+  }
+  .head {
+    flex-direction: column;
+    text-align: center;
+  }
+  .head-icon {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .head-icon i {
+    margin: 0;
+  }
+  .ham-nav {
+    display: block;
+    padding: 0.7rem 1rem;
+    background-color: #9b393b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .sidenav {
+    background-color: seagreen;
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  .sidenav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 2rem;
+  }
+  .sidenav li:hover {
+    cursor: pointer;
+  }
+  .sidenav li {
+    color: blanchedalmond;
+    padding: 0.7rem;
+  }
+  .sidenav li i {
+    color: white;
+  }
+  .sidenav ul ul {
+    display: none;
+  }
+  .sidenav ul li:hover > ul {
+    display: block;
+  }
+}

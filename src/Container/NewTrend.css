@@ -1,0 +1,44 @@
+.NT-text {
+  text-align: center;
+}
+.containerNT {
+  width: 100%;
+  height: 100vh;
+}
+
+.containerNT .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.containerNT .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.containerNT .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 769px) {
+  .containerNT {
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+  }
+  .containerNT .swiper-slide img {
+    width: 50%;
+    height: 70%;
+    margin: auto;
+  }
+
+  .NT-text {
+    width: 50%;
+    margin: 1rem auto;
+  }
+}

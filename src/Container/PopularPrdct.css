@@ -1,0 +1,29 @@
+.card-cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    gap: 20px;
+    margin: 4rem auto;
+
+}
+.container-pop{
+    width: 100%;
+}
+.pop-title{
+    text-align: center;
+}
+
+
+@media screen and (max-width:769px) {
+    .container-pop{
+        width: 100%;
+    }
+    .card-cont{
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+    }  
+    .pop-title{
+        width: 50%;
+        margin: 1rem auto;
+    }
+}

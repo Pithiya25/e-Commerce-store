@@ -1,0 +1,30 @@
+.containerNA{
+    margin: 4rem 0;
+    padding: 0.5rem;
+}
+.NA-text{
+    text-align: center;
+    margin: 2rem 0;
+}
+.product-cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px 20px;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+@media screen and (max-width:769px) {
+
+
+    .product-cont{
+        width: 70%;
+        margin: auto;
+        grid-template-columns: repeat(1,1fr);
+        
+    }  
+    .NA-text{
+        width: 50%;
+        margin: 1rem auto;
+    }
+}
